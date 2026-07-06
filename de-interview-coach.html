@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DE Interview Coach portfolio artifact by Saichandana Yenna, a generative AI tool for data engineering interview practice.">
+  <title>DE Interview Coach | Saichandana Yenna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html#home" aria-label="Saichandana Yenna home">SY</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#artifacts">Artifacts</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article class="artifact-page section">
+      <a class="back-link" href="index.html#artifacts">Back to artifacts</a>
+      <div class="artifact-hero">
+        <p class="eyebrow">Professional Portfolio Artifact</p>
+        <h1>Building a Data Engineering Interview Coach with Generative AI</h1>
+        <p class="hero-copy">
+          The DE Interview Coach is a generative AI tool I created during the AI Lab to support realistic, personalized interview practice for data engineering students and professionals.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://chatgpt.com/g/g-6a4af58b7a688191876b90e25c432fd0-de-interview-coach" target="_blank" rel="noreferrer">Open DE Interview Coach</a>
+          <a class="button secondary" href="index.html#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="artifact-body">
+        <section>
+          <h2>Why I Selected This Artifact</h2>
+          <p>
+            For my first professional portfolio artifact, I selected the DE Interview Coach because it demonstrates how I used generative AI to solve a practical problem related to my professional field. Instead of treating the AI Lab as only a class exercise, I developed a working tool that can support students and professionals preparing for data engineering interviews.
+          </p>
+        </section>
+
+        <section>
+          <h2>Purpose of the Tool</h2>
+          <p>
+            The purpose of the DE Interview Coach is to provide personalized interview practice. The bot begins by asking the user about their experience level, target role, preferred topic, and interview timeline. It then generates realistic questions related to SQL, Python, ETL pipelines, data modeling, AWS, Apache Spark, and behavioral situations.
+          </p>
+          <p>
+            The bot asks one question at a time, waits for the user's response, and provides feedback before moving to the next question. After each answer, it explains what the user did well, identifies missing or incorrect points, gives a score from 1 to 5, and provides an example of a stronger response. At the end of the practice session, it summarizes the user's strengths, weaknesses, and recommended areas for improvement.
+          </p>
+        </section>
+
+        <section>
+          <h2>Development Process</h2>
+          <p>
+            I followed several steps to create the bot. First, I identified the problem I wanted to solve. Many interview preparation resources provide lists of questions, but they do not always give personalized feedback. I wanted to create a tool that could act more like an interactive interviewer.
+          </p>
+          <p>
+            Next, I developed detailed instructions for the bot. I explained how it should begin the conversation, what topics it should cover, how it should evaluate answers, and how it should communicate with users. I instructed the bot to use simple language, remain respectful, and avoid overwhelming the user with too much information at once.
+          </p>
+        </section>
+
+        <section>
+          <h2>Testing and Iteration</h2>
+          <p>
+            I tested the bot using different situations. I asked for beginner-level SQL questions, intermediate ETL and AWS architecture questions, and behavioral questions based on real workplace problems. I also intentionally submitted incomplete and incorrect answers to see how the bot responded. This helped me evaluate whether the feedback was accurate, constructive, and easy to understand.
+          </p>
+          <p>
+            During testing, I learned that broad instructions did not produce consistent results. Simply telling the AI to act as an interviewer was not enough. I had to clearly define the order of the interaction, scoring method, feedback format, and expected tone. I also learned that a technically correct response may still be ineffective if it is too long, unclear, or discouraging.
+          </p>
+        </section>
+
+        <section>
+          <h2>Audience and Value</h2>
+          <p>
+            The intended audience for this artifact includes data engineering students, job seekers, instructors, recruiters, and technical mentors. This audience may appreciate seeing both the final bot and the process I followed to create and test it. Presenting the steps is important because it shows my ability to identify a problem, design an AI solution, evaluate its performance, and improve it based on user needs.
+          </p>
+        </section>
+
+        <section>
+          <h2>Skills Demonstrated</h2>
+          <p>
+            This artifact demonstrates prompt engineering, problem-solving, data engineering knowledge, testing, technical communication, and user-centered design. It also reflects my understanding that generative AI should support human learning rather than replace independent thinking and technical verification.
+          </p>
+          <div class="artifact-list">
+            <span>Prompt engineering</span>
+            <span>Data engineering knowledge</span>
+            <span>Testing and iteration</span>
+            <span>Technical communication</span>
+            <span>User-centered design</span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Saichandana Yenna. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

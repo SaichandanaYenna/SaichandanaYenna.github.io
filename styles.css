@@ -339,6 +339,76 @@ h3 {
   gap: 0.8rem;
 }
 
+.artifact-card {
+  margin-bottom: 1.25rem;
+  padding: 1.5rem;
+  background: rgba(17, 29, 48, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.artifact-card h3 {
+  font-size: 1.45rem;
+}
+
+.artifact-card p {
+  max-width: 54rem;
+  color: var(--muted);
+}
+
+.artifact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.artifact-actions a,
+.back-link {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.artifact-page {
+  max-width: 920px;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 2rem;
+}
+
+.artifact-hero {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.artifact-page h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+}
+
+.artifact-body {
+  display: grid;
+  gap: 2.25rem;
+  padding-top: 3rem;
+}
+
+.artifact-body section {
+  padding: 1.5rem;
+  background: rgba(17, 29, 48, 0.58);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.artifact-body h2 {
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+}
+
+.artifact-body p {
+  color: var(--muted);
+}
+
 .artifact-list span {
   padding: 0.65rem 0.9rem;
   color: var(--text);
@@ -445,5 +515,9 @@ h3 {
 
   .contact-section {
     padding: 1.25rem;
+  }
+
+  .artifact-body section {
+    padding: 1.1rem;
   }
 }
