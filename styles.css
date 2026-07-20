@@ -410,6 +410,43 @@ h3 {
   color: var(--muted);
 }
 
+.artifact-body ul,
+.artifact-body ol {
+  margin: 0;
+  padding-left: 1.4rem;
+  color: var(--muted);
+}
+
+.artifact-body li + li {
+  margin-top: 0.55rem;
+}
+
+.formula {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  color: var(--text);
+  background: linear-gradient(135deg, rgba(54, 212, 198, 0.13), rgba(106, 169, 255, 0.1));
+  border-left: 4px solid var(--accent);
+  border-radius: 0.35rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 800;
+}
+
+.calculation {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.calculation strong {
+  color: var(--text);
+}
+
 .table-wrap {
   max-width: 100%;
   overflow-x: auto;

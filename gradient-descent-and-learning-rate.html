@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gradient descent and learning rate portfolio artifact by Saichandana Yenna.">
+  <title>Gradient Descent and Learning Rate | Saichandana Yenna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html#home" aria-label="Saichandana Yenna home">SY</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#artifacts">Artifacts</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article class="artifact-page section">
+      <a class="back-link" href="index.html#artifacts">Back to artifacts</a>
+      <div class="artifact-hero">
+        <p class="eyebrow">Professional Portfolio Artifact</p>
+        <h1>Understanding Gradient Descent and Learning Rate</h1>
+        <p class="hero-copy">
+          This artifact explains how a machine learning model improves its predictions by measuring error, calculating gradients, and updating its weights and bias at a controlled learning rate.
+        </p>
+      </div>
+
+      <div class="artifact-body">
+        <section>
+          <h2>Artifact Overview</h2>
+          <p>
+            For this artifact, I selected the class activity about gradient descent, the chain rule, and learning rate. This assignment helped me understand how a machine learning model improves its predictions by adjusting its internal parameters.
+          </p>
+          <p>
+            A model begins with initial values for its weights and bias. It makes a prediction, compares that prediction with the actual result, and calculates the error using a loss function. The chain rule helps determine how much each parameter contributed to the error. Gradient descent then updates the parameters in the direction that reduces the loss.
+          </p>
+        </section>
+
+        <section>
+          <h2>Main Concepts</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Concept</th><th>Meaning</th><th>Importance in Machine Learning</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Prediction</td><td>The output produced by the model</td><td>Shows what the model currently believes the answer should be</td></tr>
+                <tr><td>Actual value</td><td>The correct or expected result</td><td>Is used to evaluate the model's prediction</td></tr>
+                <tr><td>Loss function</td><td>Measures the difference between the prediction and actual value</td><td>Shows how well or poorly the model is performing</td></tr>
+                <tr><td>Weight</td><td>A parameter that controls the influence of an input</td><td>Is adjusted to improve the model's predictions</td></tr>
+                <tr><td>Bias</td><td>A parameter that allows the model to shift its prediction</td><td>Helps the model fit the data more accurately</td></tr>
+                <tr><td>Gradient</td><td>Shows the direction and amount of change needed</td><td>Guides how model parameters should be updated</td></tr>
+                <tr><td>Chain rule</td><td>Connects the final error back to each parameter</td><td>Calculates how much each weight or bias contributed to the error</td></tr>
+                <tr><td>Gradient descent</td><td>An optimization method that reduces the loss</td><td>Helps the model gradually learn better parameter values</td></tr>
+                <tr><td>Learning rate</td><td>Controls the size of each parameter update</td><td>Determines how quickly or slowly the model learns</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>How Gradient Descent Works</h2>
+          <ol>
+            <li>The model receives input data.</li>
+            <li>The model produces a prediction.</li>
+            <li>The prediction is compared with the actual value.</li>
+            <li>The loss function calculates the prediction error.</li>
+            <li>The chain rule calculates the gradient for each parameter.</li>
+            <li>The weights and bias are updated in the opposite direction of the gradient.</li>
+            <li>The process repeats until the loss becomes smaller or reaches an acceptable level.</li>
+          </ol>
+          <div class="formula" role="math" aria-label="New parameter equals old parameter minus learning rate times gradient">
+            New parameter = Old parameter − Learning rate × Gradient
+          </div>
+          <p>
+            The model subtracts the gradient because the gradient points toward increasing loss. Moving in the opposite direction helps reduce the error.
+          </p>
+        </section>
+
+        <section>
+          <h2>Simple Example</h2>
+          <p>Suppose a model predicts 10, but the actual value is 6.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Item</th><th>Value</th></tr></thead>
+              <tbody>
+                <tr><td>Model prediction</td><td>10</td></tr>
+                <tr><td>Actual value</td><td>6</td></tr>
+                <tr><td>Difference</td><td>4</td></tr>
+                <tr><td>Result</td><td>The model needs to adjust its weights and bias</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            The loss function measures the size of this error. The chain rule then determines how much the weight and bias affected the prediction. Gradient descent updates these parameters so the next prediction can move closer to 6.
+          </p>
+          <div class="calculation">
+            <span>Current weight: <strong>2.0</strong></span>
+            <span>Gradient: <strong>0.5</strong></span>
+            <span>Learning rate: <strong>0.1</strong></span>
+            <span><strong>New weight = 2.0 − (0.1 × 0.5) = 1.95</strong></span>
+          </div>
+          <p>
+            The weight changes from 2.0 to 1.95. This small adjustment may help reduce the model's prediction error.
+          </p>
+        </section>
+
+        <section>
+          <h2>Learning Rate Comparison</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Learning Rate</th><th>Model Behavior</th><th>Possible Result</th></tr></thead>
+              <tbody>
+                <tr><td>Too high</td><td>Makes very large parameter updates</td><td>The model may overshoot the best solution or fail to converge</td></tr>
+                <tr><td>Too low</td><td>Makes very small parameter updates</td><td>Training may take a long time</td></tr>
+                <tr><td>Appropriate</td><td>Makes steady and controlled updates</td><td>The model can reduce the loss efficiently</td></tr>
+                <tr><td>Adaptive</td><td>Changes during training</td><td>The model can learn quickly at first and make smaller updates later</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            A high learning rate can cause the loss to move up and down instead of decreasing. A low learning rate may reduce the loss, but require many training steps. A suitable learning rate helps the model learn efficiently without skipping over the best parameter values.
+          </p>
+        </section>
+
+        <section>
+          <h2>Chain Rule and Model Learning</h2>
+          <p>
+            The chain rule is important because the loss is usually not directly connected to the model parameters. The prediction depends on the weights and bias, and the loss depends on the prediction.
+          </p>
+          <div class="formula">Parameters → Prediction → Loss</div>
+          <p>
+            The chain rule answers a key question: if the weight changes slightly, how much will the final loss change? This allows the model to identify which parameters contributed most to the error and how they should be adjusted.
+          </p>
+        </section>
+
+        <section>
+          <h2>Gradient Descent Variations</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Method</th><th>Description</th><th>Main Benefit</th></tr></thead>
+              <tbody>
+                <tr><td>Batch Gradient Descent</td><td>Uses the entire dataset before updating the parameters</td><td>Produces stable updates</td></tr>
+                <tr><td>Stochastic Gradient Descent</td><td>Updates the parameters after one training example</td><td>Can learn quickly from large datasets</td></tr>
+                <tr><td>Mini-Batch Gradient Descent</td><td>Uses a small group of training examples for each update</td><td>Balances speed and stability</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Mini-batch gradient descent is commonly used because it is usually faster than batch gradient descent and more stable than updating from only one example at a time.
+          </p>
+        </section>
+
+        <section>
+          <h2>Possible Training Problems</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Problem</th><th>Possible Cause</th><th>Possible Solution</th></tr></thead>
+              <tbody>
+                <tr><td>Loss keeps increasing</td><td>Learning rate may be too high</td><td>Reduce the learning rate</td></tr>
+                <tr><td>Loss decreases very slowly</td><td>Learning rate may be too low</td><td>Slightly increase the learning rate</td></tr>
+                <tr><td>Loss moves up and down</td><td>Updates may be too large or unstable</td><td>Reduce the learning rate or use mini-batches</td></tr>
+                <tr><td>Model stops improving</td><td>Model may have reached a minimum or plateau</td><td>Adjust the learning rate or training method</td></tr>
+                <tr><td>Model performs well on training data but poorly on new data</td><td>Overfitting</td><td>Use regularization, more data, or early stopping</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Real-World Applications</h2>
+          <p>Gradient descent is used to train many machine learning and deep learning systems, including:</p>
+          <ul>
+            <li>Image-recognition and speech-recognition models</li>
+            <li>Recommendation and advertising prediction systems</li>
+            <li>Fraud-detection and medical prediction systems</li>
+            <li>Sales and demand forecasting</li>
+            <li>Natural-language processing models</li>
+          </ul>
+          <p>In each application, the model repeatedly adjusts its parameters to reduce prediction errors.</p>
+        </section>
+
+        <section>
+          <h2>Skills Demonstrated</h2>
+          <p>This artifact demonstrates my ability to:</p>
+          <div class="artifact-list">
+            <span>Explain model learning</span>
+            <span>Apply the chain rule</span>
+            <span>Describe gradient descent</span>
+            <span>Compare learning rates</span>
+            <span>Diagnose training problems</span>
+            <span>Communicate technical ideas</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Key Takeaway</h2>
+          <p>
+            A machine learning model does not immediately know the correct weights and bias. It learns them gradually by making predictions, measuring errors, calculating gradients, and updating its parameters.
+          </p>
+          <p>
+            The chain rule explains how each parameter affects the loss, gradient descent determines how the parameters should change, and the learning rate controls the size of those changes. Together, these concepts help a model improve over time.
+          </p>
+        </section>
+
+        <section>
+          <h2>Reflection</h2>
+          <p>
+            I chose this third portfolio artifact because it demonstrates a technical machine learning skill and adds variety to my portfolio. Before this activity, I understood that machine learning models learn from data, but I did not fully understand how a model changed its internal values. This assignment showed me how the model calculates prediction error and uses the chain rule to identify how much each weight and bias contributed to that error.
+          </p>
+          <p>
+            I also learned that gradient descent updates model parameters in the opposite direction of the gradient to reduce loss, and that repeating this process allows predictions to improve gradually. A learning rate that is too high may overshoot the best values, while one that is too low can make training slow. Choosing an appropriate learning rate helps the model learn efficiently and remain stable.
+          </p>
+          <p>
+            This artifact improved my understanding of model optimization and helped me connect mathematical concepts to the practical training of machine learning models.
+          </p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Saichandana Yenna. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
